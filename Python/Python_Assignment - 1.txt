@@ -1,7 +1,7 @@
 ## Assignment Part-1
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
-A1. Python is a General Purpose Language, because it is used in various fields like Data        Analysis, Data Science, Cybersecurity etc., and It is a high level programing language because it is an human understandable language
+A1. Python is a General Purpose Language, because it is used in various fields like Data Analysis, Data Science, Cybersecurity etc., and It is a high level programing language because it is an human understandable language
 
 Q2. Why is Python called a dynamically typed language?
 
@@ -138,8 +138,7 @@ eg. a + b, a - b, a and b , a == b etc.,
 Q15. What is difference between / and // operators?
 
 A15. / -> Float Division, when we use this for division , it will give the precise answer with decimal points
-     // -> Integer Division, when we use this for division, it will give the round answer without 
-decimal points 
+     // -> Integer Division, when we use this for division, it will give the round answer without decimal points 
 
 For Example :-
 
