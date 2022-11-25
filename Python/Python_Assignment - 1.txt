@@ -1,0 +1,282 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+
+A1. Python is a General Purpose Language, because it is used in various fields like Data        Analysis, Data Science, Cybersecurity etc., and It is a high level programing language because it is an human understandable language
+
+Q2. Why is Python called a dynamically typed language?
+
+A2. Python is a Dynamically typed language, because python has ability of sensing the datatype of a particular variable based on the assigned values, in python it is not necessary to declare the variable with datatype before using it.
+
+Example :-
+
+a = 4
+b = 5.2
+print("Datatype of variable a = ",type(a))
+print("Datatype of variable b = ",type(b))
+
+Output :
+Datatype of variable a =  <class 'int'>
+Datatype of variable b =  <class 'float'>
+
+In the above code snippet, I have not don't declared any datatype , but based on the assigned values to variable a and b , python has identified datatype of a and b as int and float respectively and also take care of allocating memory based on the datatype. This is the reason why python is called as Dynamically typed language.
+
+Q3. List some pros and cons of Python programming language?
+
+A3. Pros of Python
+    -> General Purpose, High Level and Easy to learn Language
+    -> It has wide variety of packages and modules, which makes working on various fields very ease
+    -> No boiler plate code is needed
+    -> Last but the least, python is a language which saves developer's effort and time
+
+    Cons of Python
+    -> One of the pros, is a big corn of the python, since python saves developer's effort and time, it takes more time to execute as compared to other object - oriented programming language
+    -> since it is dynamically typed, the memory management is done by python itself, i think memory consumption may high 
+
+Q4. In what all domains can we use Python?
+
+A4. Starting from the hottest field of the decade -> Datascience, Artificial Intelligence, Data Analysis, Cybersecurity, Web Developement , Deep Learning etc.,
+
+Q5. What are variable and how can we declare them?
+
+A5. Variables are simple container storing the data , we process. In python , there is no need to declare it explicity since it is a dynamically typed language. 
+Simple Rules for using the variable names :- we should not use any keyword as variable name,should not use any special characters other than _ (underscore)
+
+Example :-
+a = 3
+b = 9.4
+
+Q6. How can we take an input from the user in Python?
+
+A6. In Python, we can take input using the input() function. Note : Whatever you get through the input function , it will be treated as String Datatype.
+
+Example :-
+
+a = input("Enter the value of a = ")
+print(a)
+
+Output:-
+
+Enter the value of a = 4
+4
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+
+A7. The Default Datatype of the value that has been taken as an input using input() function is String Datatype.
+
+Q8. What is type casting?
+
+A8. In simple, Typecasting is changing the datatype of a variable into another datatype.
+    In Python, We can do typecasting using the below functions
+    int(),float(),string(),bool()
+
+Example :-
+
+a = 5
+print("Datatype of Variable before Typecasting = ",type(a))
+a = float(5)
+print("Datatype of Variable After Typecasting = ",type(a))
+
+Output:-
+
+Datatype of Variable before Typecasting =  <class 'int'>
+Datatype of Variable After Typecasting =  <class 'float'>
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+A9. Yes we can take more than one input using single input() function. We can do using split() function. if we are not passing any input to the split function, it will take white space as delimiter.
+
+Example :- 
+
+a , b= input("Enter the value of a , b  = ").split()
+print("Value of a = ", a)
+print("Value of b = ", b)
+
+Output :-
+
+Enter the value of a , b  = 7 8
+Value of a =  7
+Value of b =  8
+
+Q10. What are keywords?
+
+A10. Keywords are predefined words which has special meaning and defined syntax and structure for it. for eg. if - is an keyword which is part of decision making statements. Every programming langauages will have the predenfined keywords which has special meaning and defined for specific tasks,
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+
+A11. We should not use keywords as variable name, because it is a predefined keyword which has special meaning, if we use it as variable it will give error. Because the keywords have the specific syntax and structure predefined
+
+Q12. What is indentation? What's the use of indentaion in Python?
+
+A12. Indentation is a spaces we give in the code especially the begining of a line. In Python, indentation is everything becuase it is an indentated language. So based on the indentation only it will capture the structure (syntax) and take the flow of the code. whereas in other programming languages we use indentation for code readability. 
+
+Note : If indentation is not properly followed, either it will affect the code flow or it will throw error.
+
+Example:-
+x = 10
+if x <= 10 :
+    print("yes")
+
+Output :-
+yes
+
+if x>= 10 :
+print("Yes")
+
+Output :- 
+IndentationError: expected an indented block
+
+Q13. How can we throw some output in Python?
+
+A13. In Python, We throw output using print() function
+
+Q14. What are operators in Python?
+
+A14. Operators in python are specials symbols which will be used for various operations using operands.Arithmetic Operators, Assignment Operators, Logical Operators, Comparison operators
+
+eg. a + b, a - b, a and b , a == b etc.,
+
+Q15. What is difference between / and // operators?
+
+A15. / -> Float Division, when we use this for division , it will give the precise answer with decimal points
+     // -> Integer Division, when we use this for division, it will give the round answer without 
+decimal points 
+
+For Example :-
+
+a = 5
+b = 2
+print("Output using float Division = ", (a/b))
+print("Output using Integer Division = ", (a//b))
+
+Output :-
+
+Output using float Division =  2.5
+Output using Integer Division =  2
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+a = "iNeuron"
+print(a*4)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+
+num = int(input("Enter the Number = "))
+if num % 2 == 0 :
+    print("The Given Number", num, "is a Even Number")
+else :
+    print("The Given Number", num,"is an Odd Number")
+
+Output:-
+Enter the Number = 3
+The Given Number 3 is an Odd Number
+
+Q18. What are boolean operator?
+
+A18. Boolean Operators comes under one of the categories of the operators which are available in python. We can say it as logical operators also. In which the outcome of the Expression is compared.
+     -> and - returns True , When all the conditions are true , otherwise returns False
+     -> or - retruns True, When one of the conditions are true, otherwise returns False
+     -> not - returns True, if result is False. returns False, if result is True
+
+Q19. What will the output of the following?
+```
+1 or 0 - 1
+
+0 and 0 - 0
+
+True and False and True - False
+
+1 or 0 or 0 - 1
+```
+
+Q20. What are conditional statements in Python?
+
+A20. Conditionals statements are the decision making statements which helps to make decision based on certain conditions. It helps us to select how the program should flow. Few conditional statements were if statement, if - else statement , elif statement etc.,
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+
+A21. We use these statements to make the condition specific programs, and we can use these to solve the decision specific requirement. I am giving the A17 as example here. 
+
+Example :-
+------ Code snippet to check the given number is odd or even --------
+
+num = int(input("Enter the Number = "))
+if num % 2 == 0 :
+    print("The Given Number", num, "is a Even Number")
+else :
+    print("The Given Number", num,"is an Odd Number")
+
+Output:-
+Enter the Number = 3
+The Given Number 3 is an Odd Number
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+age = int(input("Enter your Age = "))
+if age >= 18 :
+    print("I can vote")
+else :
+    print("I can't vote")
+
+Output :
+
+Enter your Age = 22
+I can vote
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+sum = 0
+for i in range(len(numbers)):
+        if numbers[i] % 2 == 0:
+            sum = sum + numbers[i]
+print("Sum = ",sum)
+
+Output :- 
+
+Sum =  392
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+
+a = int(input("Enter value of a = "))
+b = int(input("Enter value of b = "))
+c = int(input("Enter value of c = "))
+numList = []
+numList.append(a)
+numList.append(b)
+numList.append(c)
+print("Greatest Number = ",max(numList))
+
+Output:
+
+Enter value of a = 4
+Enter value of b = 9
+Enter value of c = 5
+Greatest Number = 9
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+for i in range(len(numbers)):
+    if numbers[i] % 5 == 0 :
+        if numbers[i] > 500 :
+            break
+        if numbers[i] > 150 :
+            continue
+        print(numbers[i])
+
+Output :- 
+
+75
+150
+145
