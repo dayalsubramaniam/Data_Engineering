@@ -1,0 +1,47 @@
+Q1. Write a Python program to print "Hello Python"?
+A1 -> print("Hello Python")
+
+Q2. Write a Python program to do arithmetical operations addition and division.?
+A2 -> 
+
+a = 5 
+b = 2
+
+#Addition
+print("Value of a + b =",a+b)
+
+#Subtraction
+print("Value of a - b =",a-b)
+
+#Multiplication
+print("Value of a * b =",a*b)
+
+#Modulus
+print("Value of a % b =",a%b)
+
+#Float Division
+print("Value of a / b =",a/b)
+
+#Integer Division
+print("Value of a// b =",a//b)
+
+Q3. Write a Python program to find the area of a triangle?
+A3 -> 
+b = float(input("Enter the Breadth = "))
+h = float(input("Enter the Height = "))
+print("Area of Triagle =",0.5*b*h)
+
+Q4. Write a Python program to swap two variables?
+A4 -> 
+a = 5
+b = 6
+print("Value of a Before Swaping =",a)
+print("Value of b Before Swaping =",b)
+a,b = b,a
+print("Value of a After Swaping =",a)
+print("Value of b After Swaping =",b)
+
+Q5. Write a Python program to generate a random number?
+A5 -> 
+import random as rm
+print(rm.randint(1,100))
