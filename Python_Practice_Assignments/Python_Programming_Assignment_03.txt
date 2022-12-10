@@ -1,0 +1,77 @@
+Q1. Write a Python Program to Check if a Number is Positive, Negative or Zero?
+A1 ->
+num = int(input("Enter the number = "))
+if num > 0:
+    print("The Given Number",num,"is Postive")
+elif num == 0:
+    print("The Given Number",num,"is Zero")
+else:
+    print("The Given Number",num,"is Negative")
+
+#Output
+Enter the number = -90
+The Given Number -90 is Negative
+
+Q2. Write a Python Program to Check if a Number is Odd or Even?
+A2 ->
+num = int(input("Enter the number = "))
+if num % 2 == 0:
+    print("The Given Number",num,"is Even")
+else:
+    print("The Given Number",num,"is Odd")
+
+#Output
+Enter the number = 4
+The Given Number 4 is Even
+
+Q3. Write a Python Program to Check Leap Year?
+A3 ->
+year = int(input("Enter the Year = "))
+if year % 100 == 0 :
+    if year % 400 == 0:
+        print("The given year",year,"is a leap year")
+    else:
+        print("The given year",year,"is not a leap year")
+else:
+    if year % 4 == 0:
+        print("The given year",year,"is a leap year")
+    else:
+        print("The given year",year,"is not a leap year")
+
+#Output
+Enter the Year = 1999
+The given year 1999 is not a leap year
+
+Q4. Write a Python Program to Check Prime Number?
+A4 ->
+num = int(input("Enter the number = "))
+count = 0
+if num == 1:
+    print("The given number is neither prime nor composite")
+else :
+    for i in range(2,num//2):
+        if num % i == 0:
+            count = count + 1
+            break;
+    if count == 0:
+        print ("The given number is an prime number")
+    else :
+        print("The given number is not an prime number")
+        
+#Output
+Enter the number = 13
+The given number is an prime number
+
+Q5. Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+A5 ->
+for num in range(1,10000):
+    if num == 1:
+        continue
+    count = 0
+    for i in range(2,num//2):
+        if num % i == 0:
+            count = count + 1
+    if count == 0:
+        print(num)
+
+
